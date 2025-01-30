@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import './LoaderAnimation.css';
 import { tailspin } from 'ldrs';
 const LoaderAnimation = () => {
+  
     useEffect(() => {
         tailspin.register()
         // Register the l-cardio component
