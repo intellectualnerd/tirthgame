@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "mostwasted";
+  src: url(./assets/Mostwasted.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --my-black: #121212;
+  --my-red: #9d0109;
+  --my-gray: #fafafa;
+  --my-dark-gray:#828080;
+  --my-white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--my-black);
+}
+nav{
+  
+  background-color: var(--my-white);
+}
+p{
+  margin-bottom: 0 !important;
+}
+button{
+  border: none;
+  background-color: transparent
+}
+.nav-link{
+  color: var(--my-black) !important;
+}
+.nav-link.active {
+  font-weight: 700;
+  position: relative;
+}
+.nav-link.active::after {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  content: " ";
+  border-radius: 100%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--my-red);
+}
+body {
+  padding-top: 70px;
+  background-color: var(--my-white) !important;
+}
+
+.headline {
+  font-family: "mostwasted";
+  font-size: 3.5rem;
+}
+.subline{
+  color: var(--my-dark-gray);
+}
+
+.my-container{
+  padding: 24px;
+  background-color: var(--my-gray);
+  border-radius: 12px;
+}
+.my-image>img{
+  width: 100%;
+}
+.my-image{
+  background-color: var(--my-white);
+  border: 4px solid var(--my-red);
+  border-radius: 8px;
+}
+.my-card-padd{
+  padding-left: 12px;
+}
+.subline>svg{
+  height: 1.2rem;
+  transform: translateY(-5%);
+  margin-left: 10px;
+}
+.hero-button{
+  padding: 8px 48px;
+  background-color: var(--my-black);
+  color: var(--my-white);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  font-family: 'mostwasted';
+  margin-top: 12px;
+  font-size: 2rem;
+  position: relative;
+}
+.hero-button>svg{
+  height: 1.2rem;
+}
+.hero-button::after{
+  content: '';
+  position: absolute;
+  background-color: var(--my-red);
+  width: 45px;
+  rotate: 15deg;
+  height: 160%;
+  right: -10%;
+  top:0;
+}
+.hero_img{
+  position: absolute;
+  right: -100px;
+  top:10px;
+  height: 800px;
+  right: -10%;
+  max-height: 60vw;
+}
+.my-section{
+  width: 100%;
+  min-height: 120vh;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width:1200px) {
+  .hero_img{
+    height: 100%;
+  }
+}
+@media (max-width:992px) {
+  .hero_img{
+    position: static;
+    max-height:none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
