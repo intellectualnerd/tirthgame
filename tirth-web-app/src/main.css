@@ -257,7 +257,11 @@ li.slick-active button {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+.red-slope{
+  position:absolute;
+  transform: translateY(-200px);
+  z-index: -1;
+}
 @media (max-width: 1200px) {
   .hero_img {
     height: 100%;
@@ -278,6 +282,18 @@ li.slick-active button {
     height: 60px !important;
     width: 60px !important;
   }
+  .all-games{
+    padding: 10px;
+  }
+  .hero-button{
+    font-size: 1.5rem;
+  }
+  .nav-link.active::after{
+    display: none;
+  }
+  .red-slope{
+    transform: translateY(-100px);
+  }
 }
 @media (max-width: 576px) {
   .slick-dots li button {
@@ -297,5 +313,8 @@ li.slick-active button {
     height: 30px;
     width: 30px;
     padding: 8px;
+  }
+  .red-slope{
+    transform: translateY(0);
   }
 }

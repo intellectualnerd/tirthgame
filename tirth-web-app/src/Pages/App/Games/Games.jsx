@@ -58,8 +58,7 @@ const Games = () => {
   };
 
   return (
-    
-    <div style={{ marginBottom: "150px",paddingBottom:"1000px"}}>
+    <div style={{ marginBottom: "150px", paddingBottom: "1000px" }}>
       <div className="container" style={{ marginBottom: "100px" }}>
         <p className="headline">Games :</p>
         <Slider {...settings}>
@@ -120,8 +119,8 @@ const Games = () => {
         </Slider>
       </div>
       <svg
-      width="100%"
-      style={{position:"absolute",transform:"translateY(-300px)"}}
+        width="100%"
+        className="red-slope"
         viewBox="0 0 1512 2850"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
