@@ -74,7 +74,7 @@ const Home = () => {
                 So, what are you waiting for? The journey begins now. Choose
                 your game, and let the fun begin!
               </p>
-              <button className="hero-button mt-4 mb-5">
+              <button className="hero-button mt-4 mb-5" onClick={()=>{window.open("./games","_blank")}}>
                 Play{" "}
                 <svg
                   viewBox="0 0 35 33"
