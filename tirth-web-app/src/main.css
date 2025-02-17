@@ -139,13 +139,16 @@ body {
 }
 .my-slider-img > img {
   width: 450px;
+  height: 400px;
   max-width: 100%;
+  object-fit: cover;
 }
 .my-slider-title {
   font-weight: 800;
   font-size: 2rem;
 }
 .slider-about-icon {
+  overflow: hidden;
   background-color: #ececec;
   height: 50px;
   width: 50px;
@@ -156,6 +159,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.my-slider-about{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Limits text to 3 lines */
+  overflow: hidden; /* Ensures content is properly clipped */
 }
 .icon-container {
   display: inline-block;
@@ -217,10 +226,24 @@ body {
   border-radius: 4px;
 }
 .slick-dots li button {
-  background-image: url("/Skier/hero.png") !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+}
+.slick-dots li:nth-child(1) button{
+  background-image: url("/Skier/hero.png") !important;
+}
+.slick-dots li:nth-child(2) button{
+  background-image: url("/Meteor/hero.png") !important;
+}
+.slick-dots li:nth-child(3) button{
+  background-image: url("/Puzzle/hero.jpg") !important;
+}
+.slick-dots li:nth-child(4) button{
+  background-image: url("/Happy_Garden/logo.webp") !important;
+}
+.slick-dots li:nth-child(5) button{
+  background-image: url("/Hitman_Bunny/logo.png") !important;
 }
 li.slick-active button {
   border: 3px solid var(--my-red) !important;
@@ -262,6 +285,10 @@ li.slick-active button {
   transform: translateY(-200px);
   z-index: -1;
 }
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
 @media (max-width: 1200px) {
   .hero_img {
     height: 100%;
@@ -274,6 +301,9 @@ li.slick-active button {
     height: auto;
     width: 100%;
     margin-bottom: 100px;
+  }
+  .my-slider-img>img{
+    height: 150px;
   }
   .my-slider-img {
     width: 60%;

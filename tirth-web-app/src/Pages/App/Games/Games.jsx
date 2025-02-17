@@ -13,35 +13,44 @@ const gamesData = [
     playLink: "./games",
   },
   {
-    title: "SKIER",
-    heroImg: "/Skier/hero.png",
+    title: "METEOR",
+    heroImg: "/Meteor/hero.png",
     description:
       "Developed a skiing game where players navigate snowy terrain, collecting red flags and avoiding obstacles. Simulated realistic physics and controls for an authentic skiing experience. Introduced power-ups and bonuses to increase gameplay variety and excitement.",
-    images: ["/Skier/1.png", "/Skier/2.png", "/Skier/3.png", "/Skier/4.png"],
+    images: ["/Meteor/1.png", "/Meteor/2.png", "/Meteor/3.png"],
     playLink: "./games",
   },
   {
-    title: "SKIER",
-    heroImg: "/Skier/hero.png",
+    title: "Puzzle",
+    heroImg: "/Puzzle/hero.jpg",
     description:
       "Developed a skiing game where players navigate snowy terrain, collecting red flags and avoiding obstacles. Simulated realistic physics and controls for an authentic skiing experience. Introduced power-ups and bonuses to increase gameplay variety and excitement.",
-    images: ["/Skier/1.png", "/Skier/2.png", "/Skier/3.png", "/Skier/4.png"],
+    images: ["/Puzzle/1.jpg", "/Puzzle/3.jpg", "/Puzzle/4.jpg"],
     playLink: "./games",
   },
   {
-    title: "SKIER",
-    heroImg: "/Skier/hero.png",
+    title: "Happy Garden",
+    heroImg: "/Happy_Garden/logo.webp",
     description:
       "Developed a skiing game where players navigate snowy terrain, collecting red flags and avoiding obstacles. Simulated realistic physics and controls for an authentic skiing experience. Introduced power-ups and bonuses to increase gameplay variety and excitement.",
-    images: ["/Skier/1.png", "/Skier/2.png", "/Skier/3.png", "/Skier/4.png"],
+    images: [
+      "/Happy_Garden/1.png",
+      "/Happy_Garden/2.png",
+      "/Happy_Garden/3.png",
+      "/Happy_Garden/4.png",
+    ],
     playLink: "./games",
   },
   {
-    title: "SKIER",
-    heroImg: "/Skier/hero.png",
+    title: "Hitman Bunny",
+    heroImg: "/Hitman_Bunny/logo.png",
     description:
       "Developed a skiing game where players navigate snowy terrain, collecting red flags and avoiding obstacles. Simulated realistic physics and controls for an authentic skiing experience. Introduced power-ups and bonuses to increase gameplay variety and excitement.",
-    images: ["/Skier/1.png", "/Skier/2.png", "/Skier/3.png", "/Skier/4.png"],
+    images: [
+      "/Hitman_Bunny/1.png",
+      "/Hitman_Bunny/2.png",
+      "/Hitman_Bunny/3.png"
+    ],
     playLink: "./games",
   },
 ];
